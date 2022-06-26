@@ -2,11 +2,38 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "format": "remark . --output"
+  },
+  "remarkConfig": {
+    "settings": {
+      "bullet": "*"
+    },
+    "plugins": [
+      "remark-preset-lint-consistent",
+      "remark-preset-lint-recommended",
+      [
+        "remark-toc",
+        {
+          "heading": "contents"
+        }
+      ]
+    ]
   },
   "dependencies": {
+    "classnames": "^2.3.1",
+    "date-fns": "^2.28.0",
+    "gray-matter": "^4.0.3",
+    "highlight.js": "^11.5.1",
     "next": "^12.1.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-markdown": "^8.0.3",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-stringify": "^9.0.3",
+    "remark-gfm": "^3.0.1",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
+    "unified": "^10.1.2"
   }
 }
