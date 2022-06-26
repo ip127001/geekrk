@@ -77,9 +77,9 @@ export default function Home({ allPostsData }) {
         <ul className={utilStyles.list}>
           <div className={utilStyles.projects}>
             {allPostsData.map(({ id, date, title }) => (
-              <div className={utilStyles.project}>
+              <div className={utilStyles.project} key={id}>
                 <img src={`/images/${id}.png`} />
-                <li className={utilStyles.listItem} key={id}>
+                <li className={utilStyles.listItem}>
                   <Link href={`/posts/${id}`}>
                     <a>{title}</a>
                   </Link>
@@ -94,7 +94,7 @@ export default function Home({ allPostsData }) {
           </div>
         </ul>
       </section>
-      <section>
+      <section className={utilStyles.projectSection}>
         <h1>Projects</h1>
         <div className={utilStyles.projects}>
           <div className={utilStyles.project}>
