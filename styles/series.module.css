@@ -1,7 +1,6 @@
 .interviewSeriesHeader {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
     max-width: 40rem;
     margin: 0 auto;
@@ -18,6 +17,9 @@
 .topicList {
     display: flex;
     flex-direction: column;
+}
+.backToHome {
+    text-align: left;
 }
 @media only screen and (max-width: 600px) {
 .interviewSeriesHeader {

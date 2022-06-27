@@ -1,6 +1,7 @@
 import Image from "next/image";
 import seriesStyles from "../styles/series.module.css";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Post() {
   return (
