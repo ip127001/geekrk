@@ -167,6 +167,9 @@
     font-size: 26px;
     margin-bottom: 40px;
   }
+  .series a {
+    text-decoration: underline;
+  }
   .mainContainer {
     max-width: 100%;
     margin: 0 30px;
@@ -182,18 +185,20 @@
     font-size: 24px;
   }
   .consoleContainer {
-    left: 150px;
+    left: 130px;
+      font-size: 1.8rem;
+      font-weight: 600;
+      top: 10px;
   }
   .tech {
     font-size: 24px;
-    margin-top: 10px;
   }
   .profile span {
     width: 200px !important;
     height: 200px !important;
   }
   .someting {
-    margin-top: 15px;
+    margin-top: 13px;
   }
   .name {
     text-align: center;

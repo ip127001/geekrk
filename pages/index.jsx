@@ -64,7 +64,7 @@ export default function Home({ allPostsData }) {
           <div className={`${utilStyles.intro} ${utilStyles.name}`}>
             Hello 👋, I'm Rohit.
           </div>
-          <div className={utilStyles.intro}>I am working as SDE2 at Swiggy</div>
+          <div className={utilStyles.intro}>I am a SDE2 at Swiggy</div>
           <div className={utilStyles.tech}>
             <div className={utilStyles.someting}> Tech Stack </div>
             <TextAnimate />
