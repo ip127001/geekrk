@@ -34,7 +34,7 @@ export default class MyDocument extends Document {
             name="description"
             content="Learn how to build a personal website using Next.js"
           />
-          <meta name="og:title" content="Blog by RK" />
+          <meta name="og:title" content="Rohit's Blog" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta property="og:image" content="/images/screen.png" />
           <link rel="icon" href="/images/logo.png" />

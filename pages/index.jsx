@@ -19,7 +19,7 @@ export default function Home({ allPostsData }) {
   return (
     <div className={utilStyles.mainContainer}>
       <Head>
-        <title>Rohit Blogs</title>
+        <title>Rohit's Blog</title>
       </Head>
 
       <section>
