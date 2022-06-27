@@ -5,6 +5,9 @@ import Link from "next/link";
 export default function Post() {
   return (
     <div className={seriesStyles.interviewSeriesHeader}>
+      <Head>
+        <title>Frontend Interview Guide</title>
+      </Head>
       <Link href="/">
         <a>&larr; Back to Home</a>
       </Link>
