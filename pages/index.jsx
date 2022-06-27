@@ -30,7 +30,7 @@ export default function Home({ allPostsData }) {
         <meta property="og:url" content="https://geekrk.vercel.app/" />
         <meta
           property="og:image"
-          content="https://flaviocopes.com/img/avatar.png"
+          content="https://res.cloudinary.com/dst3jqdwc/image/upload/v1656324684/logo_jwdqxb.png"
         />
       </Head>
 
