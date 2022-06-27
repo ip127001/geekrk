@@ -32,11 +32,11 @@ export default class MyDocument extends Document {
           <meta property="og:title" content="Rohit's Blog" />
           <meta
             property="og:description"
-            content="Frontend related Blogs by Rohit Kumawat"
+            content="Frontend related content by Rohit Kumawat"
           />
           <meta property="og:type" content="article" />
           <meta property="og:url" content="https://geekrk.vercel.app/" />
-          <meta property="og:image" content="/images/screen.png" />
+          <meta property="og:image" content="/images/logo.png" />
           <link rel="icon" href="/images/logo.png" />
         </Head>
         <body>
