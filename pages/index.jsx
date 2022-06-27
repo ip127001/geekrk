@@ -18,10 +18,6 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <div className={utilStyles.mainContainer}>
-      <Head>
-        <title>Rohit's Blog</title>
-      </Head>
-
       <section>
         <div className={utilStyles.series}>
           <Link href={`/frontend-interview-guide`}>
