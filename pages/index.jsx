@@ -20,15 +20,18 @@ export default function Home({ allPostsData }) {
     <div className={utilStyles.mainContainer}>
       <Head>
         <title>devrk</title>
-        <meta property="og:title" content="Rohit's Blog" />
+        <link rel="icon" href="/images/logo.png" />
+        <meta property="og:title" content="devrk" />
         <meta
           property="og:description"
           content="Frontend related content by Rohit Kumawat"
         />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://geekrk.vercel.app/" />
-        <meta property="og:image" content="/images/logo.png" />
-        <link rel="icon" href="/images/logo.png" />
+        <meta
+          property="og:image"
+          content="https://flaviocopes.com/img/avatar.png"
+        />
       </Head>
 
       <section>
