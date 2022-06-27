@@ -31,7 +31,6 @@ export default function TextAnimate() {
     if (textRef?.current && consoleRef?.current) {
       textRef.current.style.color = colors[0];
       interval1.current = setInterval(function () {
-        console.log("interval");
         if (letterCount === 0 && waiting === false && textRef.current) {
           waiting = true;
           textRef.current.innerText = words[0].substring(0, letterCount);
@@ -61,7 +60,6 @@ export default function TextAnimate() {
       }, 120);
 
       interval2.current = setInterval(function () {
-        console.log("interval");
         if (visible === true && consoleRef.current) {
           consoleRef.current.className = "consoleUnderscore hidden";
           visible = false;
