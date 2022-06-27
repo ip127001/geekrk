@@ -5,16 +5,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>devrk</title>
-          <meta property="og:title" content="Rohit's Blog" />
-          <meta
-            property="og:description"
-            content="Frontend related content by Rohit Kumawat"
-          />
-          <meta property="og:type" content="article" />
-          <meta property="og:url" content="https://geekrk.vercel.app/" />
-          <meta property="og:image" content="/images/logo.png" />
-          <link rel="icon" href="/images/logo.png" />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}

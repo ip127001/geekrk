@@ -18,6 +18,19 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <div className={utilStyles.mainContainer}>
+      <Head>
+        <title>devrk</title>
+        <meta property="og:title" content="Rohit's Blog" />
+        <meta
+          property="og:description"
+          content="Frontend related content by Rohit Kumawat"
+        />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://geekrk.vercel.app/" />
+        <meta property="og:image" content="/images/logo.png" />
+        <link rel="icon" href="/images/logo.png" />
+      </Head>
+
       <section>
         <div className={utilStyles.series}>
           <Link href={`/frontend-interview-guide`}>
