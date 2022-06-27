@@ -16,12 +16,24 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
+  function clickBlog(title) {
+    window.gtag("event", "blog_clicked", {
+      event_category: "tech",
+      event_label: "link tracking",
+      value: title,
+    });
+  }
+
   return (
     <div className={utilStyles.mainContainer}>
       <Head>
         <title>devrk</title>
         <link rel="icon" href="/images/logo.png" />
         <meta property="og:title" content="devrk" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/dst3jqdwc/image/upload/v1656324684/logo_jwdqxb.png"
+        />
         <meta
           property="og:description"
           content="Frontend related content by Rohit Kumawat"
@@ -89,7 +101,7 @@ export default function Home({ allPostsData }) {
                 <img src={`/images/${id}.png`} />
                 <li className={utilStyles.listItem}>
                   <Link href={`/posts/${id}`}>
-                    <a>{title}</a>
+                    <a onClick={() => clickBlog(title)}>{title}</a>
                   </Link>
                   <br />
                   <small className={utilStyles.lightText}>

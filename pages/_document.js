@@ -5,10 +5,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta
-            property="og:image"
-            content="https://res.cloudinary.com/dst3jqdwc/image/upload/v1656324684/logo_jwdqxb.png"
-          />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
