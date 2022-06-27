@@ -1,5 +1,4 @@
 .interviewSeriesHeader {
-    max-width: 50rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +10,6 @@
 
 }
 .header {
-    /* text-transform: uppercase; */
     background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -20,4 +18,16 @@
 .topicList {
     display: flex;
     flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+.interviewSeriesHeader {
+    max-width: 100%;
+    margin: 0 30px;
+}
+.header {
+    font-size: 26px;
+}
+.topicList h2 {
+    font-size: 20px;
+}
 }
