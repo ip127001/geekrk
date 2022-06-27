@@ -71,7 +71,7 @@
     margin-top: 10px;
     color: rgb(84, 84, 84);
     font-size: 32px;
-background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+/* background: linear-gradient(to right, #30CFD0 0%, #330867 100%); */
   -webkit-background-clip: text;
   }
   .introWrap {
@@ -101,7 +101,7 @@ background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
       color: #dfdfdf;
       top: 0;
       bottom: 0;
-      left: 140px;
+      left: 200px;
       right: 0;
       margin: auto;
       display: flex;
@@ -164,4 +164,47 @@ background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
 }
 .projectSection {
   margin-top: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .series {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  .mainContainer {
+    max-width: 100%;
+    margin: 0 30px;
+  }
+  .headingMd {
+    flex-direction: column;
+  }
+  .introWrap {
+    margin-top: 30px;
+  }
+  .intro {
+    font-size: 24px;
+  }
+  .consoleContainer {
+    left: 150px;
+  }
+  .tech {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .profile span {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .someting {
+    margin-top: 15px;
+  }
+  .name {
+    text-align: center;
+  }
+  .projects {
+    gap: 0%;
+  }
+  .project {
+    flex-basis: 100%;
+  }
 }
