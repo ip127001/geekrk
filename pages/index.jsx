@@ -81,20 +81,30 @@ export default function Home({ allPostsData }) {
       </section>
 
       <section className={`${utilStyles.blogSection}`}>
-        <h1 className={utilStyles.headingLg}>Blogs:</h1>
+        <div className={utilStyles.blogHeader}>
+          <h1 className={utilStyles.headingLg}>Blogs:</h1>
+          {/* <span className={`${utilStyles.tag} ${utilStyles.yellow}`}>
+            JavaScript
+          </span>
+          <span className={`${utilStyles.tag} ${utilStyles.blue}`}>React</span> */}
+        </div>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem}>
-              <Link href={`/posts/${id}`}>
-                <a onClick={() => clickBlog(title)}>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-              <br />
-            </li>
-          ))}
+          <div className={utilStyles.projects}>
+            {allPostsData.map(({ id, date, title }) => (
+              <div className={utilStyles.project} key={id}>
+                <img src={`/images/${id}.png`} />
+                <li className={utilStyles.listItem}>
+                  <small className={utilStyles.lightText}>
+                    <Date dateString={date} />
+                  </small>
+                  <br></br>
+                  <Link href={`/posts/${id}`}>
+                    <a onClick={() => clickBlog(title)}>{title}</a>
+                  </Link>
+                </li>
+              </div>
+            ))}
+          </div>
         </ul>
       </section>
       <section className={utilStyles.projectSection}>
