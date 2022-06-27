@@ -36,7 +36,7 @@ export default class MyDocument extends Document {
           />
           <meta name="og:title" content="Rohit's Blog" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta property="og:image" content="/images/screen.png" />
+          <meta property="og:image" content="https://freeimage.host/i/j3JKUx" />
           <link rel="icon" href="/images/logo.png" />
         </Head>
         <body>
