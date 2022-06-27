@@ -28,10 +28,6 @@ export default function Home({ allPostsData }) {
         />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://geekrk.vercel.app/" />
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/dst3jqdwc/image/upload/v1656324684/logo_jwdqxb.png"
-        />
       </Head>
 
       <section>
