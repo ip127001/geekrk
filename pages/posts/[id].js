@@ -37,10 +37,6 @@ export default function Post({ postData }) {
       </Link>
       <Head>
         <title>{postData.title}</title>
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/dst3jqdwc/image/upload/v1656324684/logo_jwdqxb.png"
-        />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>

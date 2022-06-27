@@ -65,7 +65,7 @@
     font-size: 26px;
     margin-top: 10px;
     color: rgb(84, 84, 84);
-    font-size: 32px;
+    font-size: 34px;
 /* background: linear-gradient(to right, #30CFD0 0%, #330867 100%); */
   -webkit-background-clip: text;
   }
@@ -118,7 +118,7 @@
     }
 
     .someting {
-      margin-top: 20px;
+      margin-top: 16px;
     }
     .swiggy {
       color: #f66f1c;
