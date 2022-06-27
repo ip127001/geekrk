@@ -32,7 +32,7 @@
   .headingMd {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   
   .borderCircle {
@@ -215,5 +215,8 @@
   }
   .heading2Xl {
     font-size: 26px;
+  }
+  .blogSection {
+    margin-top: 60px;
   }
 }
