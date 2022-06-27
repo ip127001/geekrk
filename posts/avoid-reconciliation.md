@@ -8,7 +8,14 @@ There are many performance optimization concepts in react which helps us to buil
 
 Today I am going to discuss one of most discussed concept in performance optimization: how to avoid Reconciliation
 
-### Table Of Content
+<iframe
+  src="https://codesandbox.io/embed/new?codemirror=1"
+  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
+
+<!-- ### Table Of Content
 
 * [What is Reconciliation](#topic-1)
 * [Ways to avoid Reconciliation](#topic-2)
@@ -16,7 +23,7 @@ Today I am going to discuss one of most discussed concept in performance optimiz
     * [Codesandbox url](#sandbox-1)
   * [PureComponent](#topic-4)
     * [Codesandbox url](#sandbox-2)
-  * [React.memo](#topic-5)
+  * [React.memo](#topic-5) -->
 
 ### **What is Reconciliation? <a name="topic-1"></a>**
 
@@ -255,11 +262,11 @@ I have added the codesandbox urls below for both state of application before opt
 
 1. Without any performance optimization: <a name="sandbox-1"></a>
 
-{% codesandbox jolly-sky-d785y %}
+[![Edit jolly-sky-d785y](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/jolly-sky-d785y?fontsize=14&hidenavigation=1&theme=dark)
 
 2.With shouldComponentUpdate():
 
-{% codesandbox nervous-yonath-r8mdc %}
+[![Edit nervous-yonath-r8mdc](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/nervous-yonath-r8mdc?fontsize=14&hidenavigation=1&theme=dark)
 
 -------------------------------------------------------------
 
@@ -384,7 +391,7 @@ export default Child;
 
 * Please check the console here: as we select any color it adds it to the state array but doesn't re-render the child component.
 
-{% codesandbox silly-solomon-m2jwk %}
+[![Edit silly-solomon-m2jwk](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/silly-solomon-m2jwk?fontsize=14&hidenavigation=1&theme=dark)
 
 ------------------------------------------------------------------
 ### **3 React.memo: <a name="topic-5"></a>**

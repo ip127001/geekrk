@@ -1,5 +1,5 @@
 .mainContainer {
-    max-width: 55rem;
+    max-width: 40rem;
     margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@
   .headingMd {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   
   .borderCircle {
@@ -53,6 +53,15 @@
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+  .listItem {
+    margin-bottom: 20px;
+  }
+  .listItem a {
+    color: black;
+  }
+  .listItem a:hover {
+    color: #0070f3;
   }
   .lightText {
     color: #666;
@@ -118,7 +127,7 @@
     }
 
     .someting {
-      margin-top: 16px;
+      margin-top: 20px;
     }
     .swiggy {
       color: #f66f1c;
@@ -137,17 +146,9 @@
 .socials img {
   margin-right: 10px;
 }
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3%;
-}
 .project {
-  flex-basis: 30%;
-  padding: 12px;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px 2px rgba(0,0,0,0.15);
-  margin-bottom: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 .project img {
   border: 1px solid #e3e3e3;
