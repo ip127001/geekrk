@@ -107,7 +107,7 @@ export default function Home({ allPostsData }) {
         </ul>
       </section>
       <section className={utilStyles.projectSection}>
-        <h1>Projects</h1>
+        <h1>Projects:</h1>
         <div className={utilStyles.projects}>
           <div className={utilStyles.project}>
             <img src="/images/project.png" />
