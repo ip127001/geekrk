@@ -29,14 +29,14 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap"
             rel="stylesheet"
           />
-
+          <meta property="og:title" content="Rohit's Blog" />
           <meta
-            name="description"
-            content="Learn how to build a personal website using Next.js"
+            property="og:description"
+            content="Frontend related Blogs by Rohit Kumawat"
           />
-          <meta name="og:title" content="Rohit's Blog" />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta property="og:image" content="https://freeimage.host/i/j3JKUx" />
+          <meta property="og:type" content="article" />
+          <meta property="og:url" content="https://geekrk.vercel.app/" />
+          <meta property="og:image" content="/images/screen.png" />
           <link rel="icon" href="/images/logo.png" />
         </Head>
         <body>
