@@ -12,7 +12,7 @@ export default function Post() {
       <Link href="/">
         <a>&larr; Back to Home</a>
       </Link>
-      <h1 className={seriesStyles.header}>Frontend Interview Guide's Blogs</h1>
+      <h1 className={seriesStyles.header}>Frontend Interview Guide</h1>
       <Image
         priority
         src="/images/interview.jpg"
