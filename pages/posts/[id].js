@@ -81,7 +81,10 @@ export default function Post({ postData }) {
             {likes}
           </div>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div
+          className={utilStyles.postHtml}
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+        />
         <div className={utilStyles.footerClass}>
           <div> If you find the blog helpful, please do like the blog:</div>{" "}
           <div

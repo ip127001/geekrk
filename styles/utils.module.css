@@ -21,18 +21,13 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
-    /* text-overflow: ellipsis;
-    overflow: hidden;
-    display: -webkit-box !important;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    white-space: normal; */
   }
   
   .headingLg {
     font-size: 1.5rem;
     line-height: 1.4;
     margin: 1rem 0;
+    font-weight: 500;
   }
   
   .headingMd {
@@ -209,6 +204,9 @@
 .projectImg {
   cursor: pointer;
 }
+.postHtml {
+    font-family: 'Poppins', sans-serif;
+}
 @media only screen and (max-width: 600px) {
   .series {
     font-size: 26px;
@@ -233,7 +231,7 @@
   }
   .consoleContainer {
     left: 120px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     top: 10px;
   }
@@ -245,7 +243,7 @@
     height: 200px !important;
   }
   .someting {
-    margin-top: 16px;
+    margin-top: 14px;
   }
   .name {
     text-align: center;
@@ -267,7 +265,10 @@
     margin-top: 60px;
   }
   .headingXl {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
   }
+.thumbsSection {
+  font-size: 18px !important;
+}
 }
