@@ -2,7 +2,7 @@ import { MongoClient } from "mongodb";
 import nextConnect from "next-connect";
 
 const client = new MongoClient(
-  "mongodb+srv://ip127001:eXTdWXh1O0kcU3jj@cluster0.jc3c00j.mongodb.net/Blog",
+  `mongodb+srv://${process.env.USER_NAME}:${process.env.PASSWORD}@${CLUSTER_NAME}/${DB_NAME}`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,

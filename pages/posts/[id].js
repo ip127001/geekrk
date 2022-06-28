@@ -19,9 +19,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
-  const res = await fetch(`http://localhost:3000/api/likes?id=${params.id}`);
-  const json = await res.json();
-  postData.likes = json?.likes || 0;
+  // const res = await fetch(`http://localhost:3000/api/likes?id=${params.id}`);
+  // const json = await res.json();
+  // postData.likes = json?.likes || 0;
 
   return {
     props: {
@@ -37,19 +37,20 @@ export default function Post({ postData }) {
     hljs.highlightAll();
   }, []);
 
-  const updateLikes = async (data) => {
-    await fetch("http://localhost:3000/api/likes", {
-      method: "post",
-      body: JSON.stringify({ data }),
-    });
-    getLikes(data.title);
-  };
+  const updateLikes = () => {};
+  // const updateLikes = async (data) => {
+  //   await fetch("http://localhost:3000/api/likes", {
+  //     method: "post",
+  //     body: JSON.stringify({ data }),
+  //   });
+  //   getLikes(data.title);
+  // };
 
-  async function getLikes(id) {
-    const res = await fetch(`http://localhost:3000/api/likes?id=${id}`);
-    const json = await res.json();
-    setLikes(json.likes);
-  }
+  // async function getLikes(id) {
+  //   const res = await fetch(`http://localhost:3000/api/likes?id=${id}`);
+  //   const json = await res.json();
+  //   setLikes(json.likes);
+  // }
 
   return (
     <div className={utilStyles.postContainer}>
