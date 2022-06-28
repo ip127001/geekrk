@@ -51,7 +51,7 @@ export default function Post({ postData }) {
   async function getLikes(id) {
     const res = await fetch(`/api/likes?id=${id}`);
     const json = await res.json();
-    setLikes(json.likes);
+    setLikes(json?.likes || 0);
   }
 
   return (
