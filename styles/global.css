@@ -43,16 +43,16 @@ td {
   border: 1px solid #d6d6d7;
 }
 code {
-    display: inline;
-      font-family: var(--font-family-mono);
-      font-size: 0.9em;
-      letter-spacing: -0.5px;
-      padding: 4.5px 6px;
-      margin: 1px -1px;
-      background: rgba(115, 125, 140, 0.17);
-      border-radius: 3px;
-      -webkit-box-decoration-break: clone;
-      position: relative;
+  display: inline;
+  font-family: var(--font-family-mono);
+  font-size: 0.9em;
+  letter-spacing: -0.5px;
+  padding: 4.5px 6px;
+  margin: 1px -1px;
+  background: rgba(115, 125, 140, 0.17);
+  border-radius: 3px;
+  -webkit-box-decoration-break: clone;
+  position: relative;
   
 }
 blockquote {
@@ -76,4 +76,10 @@ nav li {
 }
 .placeholder404 {
   margin-top: 80px;
+}
+@media only screen and (max-width: 600px) { 
+  html,
+    body {
+      font-size: 14px;
+     }
 }

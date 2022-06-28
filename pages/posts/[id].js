@@ -5,6 +5,7 @@ import Link from "next/link";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
 import { useEffect } from "react";
+import { connnectToDatabase } from "../../middleware/database";
 import hljs from "highlight.js";
 import javascript from "highlight.js/lib/languages/javascript";
 hljs.registerLanguage("javascript", javascript);
@@ -19,9 +20,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
-  // const res = await fetch(`http://localhost:3000/api/likes?id=${params.id}`);
-  // const json = await res.json();
-  // postData.likes = json?.likes || 0;
+  let { db } = await connnectToDatabase();
+  const doc = await db.collection("Likes").findOne({ title: params.id });
+  postData.likes = doc?.likes || 0;
 
   return {
     props: {
@@ -37,20 +38,19 @@ export default function Post({ postData }) {
     hljs.highlightAll();
   }, []);
 
-  const updateLikes = () => {};
-  // const updateLikes = async (data) => {
-  //   await fetch("http://localhost:3000/api/likes", {
-  //     method: "post",
-  //     body: JSON.stringify({ data }),
-  //   });
-  //   getLikes(data.title);
-  // };
+  const updateLikes = async (data) => {
+    await fetch("http://localhost:3000/api/likes", {
+      method: "post",
+      body: JSON.stringify({ data }),
+    });
+    getLikes(data.title);
+  };
 
-  // async function getLikes(id) {
-  //   const res = await fetch(`http://localhost:3000/api/likes?id=${id}`);
-  //   const json = await res.json();
-  //   setLikes(json.likes);
-  // }
+  async function getLikes(id) {
+    const res = await fetch(`http://localhost:3000/api/likes?id=${id}`);
+    const json = await res.json();
+    setLikes(json.likes);
+  }
 
   return (
     <div className={utilStyles.postContainer}>

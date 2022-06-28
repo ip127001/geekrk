@@ -13,7 +13,7 @@ handler.get(async (req, res) => {
 handler.post(async (req, res) => {
   let data = req.body;
   data = JSON.parse(data);
-  let doc = await req.db
+  await req.db
     .collection("Likes")
     .updateOne(
       { title: data.data.title },
