@@ -38,19 +38,20 @@ export default function Post({ postData }) {
     hljs.highlightAll();
   }, []);
 
-  const updateLikes = async (data) => {
-    await fetch("/api/likes", {
-      method: "post",
-      body: JSON.stringify({ data }),
-    });
-    getLikes(data.title);
-  };
+  const updateLikes = () => {};
+  // const updateLikes = async (data) => {
+  //   await fetch("/api/likes", {
+  //     method: "post",
+  //     body: JSON.stringify({ data }),
+  //   });
+  //   getLikes(data.title);
+  // };
 
-  async function getLikes(id) {
-    const res = await fetch(`/api/likes?id=${id}`);
-    const json = await res.json();
-    setLikes(json.likes);
-  }
+  // async function getLikes(id) {
+  //   const res = await fetch(`/api/likes?id=${id}`);
+  //   const json = await res.json();
+  //   setLikes(json.likes);
+  // }
 
   return (
     <div className={utilStyles.postContainer}>
