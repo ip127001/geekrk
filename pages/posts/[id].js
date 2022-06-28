@@ -29,6 +29,7 @@ export async function getStaticProps({ params }) {
 
 export default function Post({ postData }) {
   const [likes, setLikes] = useState(postData.likes);
+  const [isLoading, setisLoading] = useState(true);
 
   useEffect(() => {
     hljs.highlightAll();
@@ -37,6 +38,8 @@ export default function Post({ postData }) {
   useEffect(() => {
     if (postData?.id) {
       getLikes(postData.id);
+    } else {
+      setisLoading(false);
     }
   }, [postData]);
 
@@ -52,6 +55,7 @@ export default function Post({ postData }) {
     const res = await fetch(`/api/likes?id=${id}`);
     const json = await res.json();
     setLikes(json?.likes || 0);
+    setisLoading(false);
   }
 
   return (
@@ -70,17 +74,27 @@ export default function Post({ postData }) {
             <Date dateString={postData.date} />
           </div>
           <div className={utilStyles.thumbsSection}>
-            <button
-              onClick={() =>
-                updateLikes({
-                  title: postData.id,
-                  likes: Number(likes) + 1,
-                })
-              }
-            >
-              &#128077;
-            </button>
-            {likes}
+            {isLoading ? (
+              <div className={utilStyles.spinner}>
+                <div className={utilStyles.bounce1}></div>
+                <div className={utilStyles.bounce2}></div>
+                <div className={utilStyles.bounce3}></div>
+              </div>
+            ) : (
+              <>
+                <button
+                  onClick={() =>
+                    updateLikes({
+                      title: postData.id,
+                      likes: Number(likes) + 1,
+                    })
+                  }
+                >
+                  &#128077;
+                </button>
+                {likes}
+              </>
+            )}
           </div>
         </div>
         <div
