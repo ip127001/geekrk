@@ -136,7 +136,7 @@
   color: rgb(84, 84, 84);
 }
 
-.someting {
+.techStack {
   margin-top: 24px;
 }
 
@@ -233,8 +233,9 @@
 
 @media only screen and (max-width: 600px) {
   .series {
-    font-size: 26px;
+    font-size: 28px;
     margin-bottom: 40px;
+    font-weight: 500;
   }
 
   .series a {
@@ -275,8 +276,8 @@
     height: 200px !important;
   }
 
-  .someting {
-    margin-top: 15px;
+  .techStack {
+    margin-top: 16px;
   }
 
   .name {
@@ -322,6 +323,6 @@
   }
 
   .project a {
-    font-size: 16px;
+    font-size: 18px;
   }
 }

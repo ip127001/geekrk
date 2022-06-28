@@ -74,7 +74,7 @@ export default function Home({ allPostsData }) {
           </div>
           <div className={utilStyles.intro}>I am a SDE2 at Swiggy</div>
           <div className={utilStyles.tech}>
-            <div className={utilStyles.someting}> Tech Stack </div>
+            <div className={utilStyles.techStack}> Tech Stack </div>
             <TextAnimate />
           </div>
         </div>

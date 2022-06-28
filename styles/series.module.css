@@ -18,6 +18,9 @@
 .backToHome {
     text-align: left;
 }
+.interviewSeriesHeader h1, .interviewSeriesHeader h2 {
+    font-weight: 500;
+}
 @media only screen and (max-width: 600px) {
 .interviewSeriesHeader {
     max-width: 100%;
