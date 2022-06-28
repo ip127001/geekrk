@@ -17,6 +17,7 @@
 }
 .backToHome {
     text-align: left;
+    font-size: 12px;
 }
 .interviewSeriesHeader h1, .interviewSeriesHeader h2 {
     font-weight: 500;

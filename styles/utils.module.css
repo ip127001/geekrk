@@ -364,7 +364,7 @@
   }
 
   .headingXl {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
   }
 
@@ -373,7 +373,7 @@
   }
 
   .lightText div {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .headingLg {
@@ -382,5 +382,8 @@
 
   .project a {
     font-size: 18px;
+  }
+  .backToHome {
+    font-size: 12px;
   }
 }

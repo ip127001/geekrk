@@ -61,7 +61,7 @@ export default function Post({ postData }) {
   return (
     <div className={utilStyles.postContainer}>
       <Link href="/">
-        <a>&larr; Back to Home</a>
+        <a className={utilStyles.backToHome}>&larr; Back to Home</a>
       </Link>
       <Head>
         <title>{postData.title}</title>
