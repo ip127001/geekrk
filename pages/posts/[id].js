@@ -86,7 +86,7 @@ export default function Post({ postData }) {
           dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
         />
         <div className={utilStyles.footerClass}>
-          <div> If you find the blog helpful, please do like the blog:</div>{" "}
+          <div> If you find the blog helpful, please do give a thumbs up:</div>{" "}
           <div
             className={`${utilStyles.thumbsSection} ${utilStyles.lightText}`}
           >
