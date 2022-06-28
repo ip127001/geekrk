@@ -98,7 +98,6 @@
   margin-bottom: 80px;
   font-size: 36px;
   background: linear-gradient(to right, #12c2e9 0%, #c471ed 50%, #f64f59 100%);
-  /* background: linear-gradient(to right, #373B44 0%, #4286f4 100%); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -182,7 +181,7 @@
 
 .project a {
   font-size: 20px;
-  color: #413F42;
+  color: #9a9a9a;
 }
 
 .project a:hover {
@@ -236,9 +235,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
-
-
 .spinner {
   width: 70px;
 }
@@ -290,8 +286,6 @@
     transform: scale(1.0);
   }
 }
-
-
 
 @media only screen and (max-width: 600px) {
   .series {
