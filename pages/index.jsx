@@ -97,7 +97,6 @@ export default function Home({ allPostsData }) {
                   <small className={utilStyles.lightText}>
                     <Date dateString={date} />
                   </small>
-                  <br></br>
                   <Link href={`/posts/${id}`}>
                     <a onClick={() => clickBlog(title)}>{title}</a>
                   </Link>
