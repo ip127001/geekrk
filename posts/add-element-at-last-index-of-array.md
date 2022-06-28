@@ -4,6 +4,8 @@ date: "2020-11-10"
 tags: javascript, programming, interviewpreperation, frontend
 ---
 
+![Image](/images/add-element-at-last-index-of-array.png)
+
 There are 5 ways to add an element at the last index of the array in JavaScript.
 
 ### 1. Array.push() method
