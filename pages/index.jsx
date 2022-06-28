@@ -92,7 +92,12 @@ export default function Home({ allPostsData }) {
           <div className={utilStyles.projects}>
             {allPostsData.map(({ id, date, title }) => (
               <div className={utilStyles.project} key={id}>
-                <img src={`/images/${id}.png`} />
+                <Link href={`/posts/${id}`}>
+                  <img
+                    className={utilStyles.projectImg}
+                    src={`/images/${id}.png`}
+                  />
+                </Link>
                 <li className={utilStyles.listItem}>
                   <small className={utilStyles.lightText}>
                     <Date dateString={date} />
