@@ -5,7 +5,6 @@ import Link from "next/link";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
 import { useEffect } from "react";
-import { connnectToDatabase } from "../../middleware/database";
 import hljs from "highlight.js";
 import javascript from "highlight.js/lib/languages/javascript";
 hljs.registerLanguage("javascript", javascript);
@@ -20,9 +19,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
-  let { db } = await connnectToDatabase();
-  const doc = await db.collection("Likes").findOne({ title: params.id });
-  postData.likes = doc?.likes || 0;
 
   return {
     props: {
@@ -37,6 +33,12 @@ export default function Post({ postData }) {
   useEffect(() => {
     hljs.highlightAll();
   }, []);
+
+  useEffect(() => {
+    if (postData?.id) {
+      getLikes(postData.id);
+    }
+  }, [postData]);
 
   const updateLikes = async (data) => {
     await fetch("/api/likes", {
