@@ -39,7 +39,7 @@ export default function Post({ postData }) {
   }, []);
 
   const updateLikes = async (data) => {
-    await fetch("http://localhost:3000/api/likes", {
+    await fetch("/api/likes", {
       method: "post",
       body: JSON.stringify({ data }),
     });
@@ -47,7 +47,7 @@ export default function Post({ postData }) {
   };
 
   async function getLikes(id) {
-    const res = await fetch(`http://localhost:3000/api/likes?id=${id}`);
+    const res = await fetch(`/api/likes?id=${id}`);
     const json = await res.json();
     setLikes(json.likes);
   }
