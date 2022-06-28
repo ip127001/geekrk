@@ -147,14 +147,18 @@
   /* padding: 12px; */
   /* border-radius: 4px; */
   /* box-shadow: 0 4px 8px 2px rgba(0,0,0,0.15); */
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .project img {
   border: 1px solid #e3e3e3;
   margin-bottom: 20px;
-  height: 200px;
+  height: 300px;
   width: 100%;
   border-radius: 8px;
+}
+.project img:hover {
+  /* padding: 2px;
+  border: 2px solid rgb(115, 122, 226); */
 }
 .project a {
   font-size: 22px;

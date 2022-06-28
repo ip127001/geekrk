@@ -4,16 +4,11 @@ date: "2020-08-16"
 tags: javascript, programming, interviewpreperation, frontend, react
 ---
 
+![Image](/images/avoid-reconciliation.png)
+
 There are many performance optimization concepts in react which helps us to build faster applications.
 
 Today I am going to discuss one of most discussed concept in performance optimization: how to avoid Reconciliation
-
-<iframe
-  src="https://codesandbox.io/embed/new?codemirror=1"
-  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-></iframe>
 
 <!-- ### Table Of Content
 
