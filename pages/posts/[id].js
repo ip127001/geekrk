@@ -87,24 +87,6 @@ export default function Post({ postData }) {
           className={utilStyles.postHtml}
           dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
         />
-        <div className={utilStyles.footerClass}>
-          <div> If you find the blog helpful, please do give a thumbs up:</div>{" "}
-          <div
-            className={`${utilStyles.thumbsSection} ${utilStyles.lightText}`}
-          >
-            <button
-              onClick={() =>
-                updateLikes({
-                  title: postData.id,
-                  likes: Number(likes) + 1,
-                })
-              }
-            >
-              &#128077;
-            </button>
-            {likes}
-          </div>
-        </div>
       </article>
     </div>
   );
