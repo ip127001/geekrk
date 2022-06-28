@@ -5,6 +5,8 @@ tags: javascript, programming, interviewpreperation, frontend
 ---
 ![Image](/images/5-ways-to-delete-element-from-array.png)
 
+![Image](/images/5-ways-to-delete-element-from-array.png)
+
 **Situation:**
 Whenever we need to delete an element from an array based on an index or certain condition, we can use the following 5 ways.
 
