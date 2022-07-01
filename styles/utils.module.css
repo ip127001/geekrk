@@ -62,7 +62,7 @@
 .lightText {
   color: rgb(154, 154, 154);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -369,7 +369,7 @@
   }
 
   .thumbsSection {
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
 
   .lightText div {
@@ -385,5 +385,8 @@
   }
   .backToHome {
     font-size: 12px;
+  }
+  .lightText button {
+    font-size: 18px;
   }
 }

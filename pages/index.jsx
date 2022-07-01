@@ -82,7 +82,7 @@ export default function Home({ allPostsData }) {
 
       <section className={`${utilStyles.blogSection}`}>
         <div className={utilStyles.blogHeader}>
-          <h1 className={utilStyles.headingLg}>Blogs:</h1>
+          <h1 className={utilStyles.headingLg}>Recent Blogs:</h1>
           {/* <span className={`${utilStyles.tag} ${utilStyles.yellow}`}>
             JavaScript
           </span>
