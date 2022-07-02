@@ -57,7 +57,7 @@ arr = [5,4,56];
 //TypeError: Assignment to constant variable.
 ```
 
-**Note:** Sometimes `const` can be referred to as constant value assignment. Once assigned can't be changed. But it is not the case. It should be considered as **NO RE-INITIALIZATION**.
+> Note: Sometimes `const` can be referred to as constant value assignment. Once assigned can't be changed. But it is not the case. It should be considered as **NO RE-INITIALIZATION**.
 Like in the above example with the array `arr` we tried to assign a new array then JavaScript throws an error. But we tried to change the values in the already assigned array then Javascript won't throw an error. See the example below:
 
 ```javascript
@@ -100,6 +100,6 @@ When our code is compiled `const` declarations are hoisted but they are not init
 ----------------------------------------------------------------------------
 
 **Conclusion:**
-Including this article, I have covered all three variable declarations var, let, and const in JavaScipt. Now you can checkout most common asked Javascript Interview Question *Difference between var/let/const* [here](/posts/var-let-const)
+Including this article, I have covered all three variable declarations var, let, and const in JavaScipt. Now you can checkout most common asked Javascript Interview Question **Difference between var/let/const** [here](/posts/var-let-const)
 
 Thanks for reading the article!

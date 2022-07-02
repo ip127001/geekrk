@@ -7,17 +7,11 @@ tags: javascript, programming, interviewpreperation, frontend
 
 ![var](/images/var.png)
 
-Variable declaration: var
-
-Variables represent a memory location where data can be stored. Basically, they are names of boxes in which we can put data values.
-
-But to use variables we need to declare a variable, then assign a data value to it.
-
-In Javascript, variables are declared with keywords `var`, `let`, and `const`.
+Variables represent a memory location where data can be stored. Basically, they are names of boxes in which we can put data values. But to use variables we need to declare a variable, then assign a data value to it. In Javascript, variables are declared with keywords `var`, `let`, and `const`.
 
 **Note**: In Java and many other languages variables are declared with different keywords like `int` for integer type of data values or `char` for characters. But in JavaScript, we have general keywords for all types of data values whether they are integer, decimal, boolean, or strings.
 
-ES6 introduced let and const keywords but var was the only option before 2015. In this article, we are going to discuss **var** specifically.
+ES6 introduced let and const keywords but var was the only option before 2015. In this article, we are going to discuss `var` specifically.
 
 ### The var
 
@@ -145,7 +139,7 @@ With `var`, we can assign value first then declare the variable it won't throw a
 2. during the compile-time variable is assigned the `undefined` value.
 3. when it reaches initialization like in our example `test = 10`, then the updated value is assigned to the variable.
 
-**Note:** Declarations are hoisted but not the assignment.
+> Note: Declarations are hoisted but not the assignment.
 
 Example:
 
@@ -158,7 +152,7 @@ console.log(band); //coldplay
 var band;
 ```
 
-The `band` variable is processed before the first console due to hoisting but the only declaration is hoisted not the assignment. So, its value is **undefined** initially. It is like assigning the **undefined** value to the `band` variable. During execution when the real assignment is done then the value **Coldplay** is assigned to the `band` variable.
+The `band` variable is processed before the first console due to hoisting but the only declaration is hoisted not the assignment. So, its value is `undefined` initially. It is like assigning the `undefined` value to the `band` variable. During execution when the real assignment is done then the value `Coldplay` is assigned to the `band` variable.
 
 -----------------------------------------------------------------------------------------
 

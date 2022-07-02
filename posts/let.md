@@ -7,8 +7,6 @@ tags: javascript, programming, interviewpreperation, frontend
 
 ![let](/images/let.png)
 
-Variable declaration: let
-
 ES6 introduced the `let` keyword to declare variables for all types of data like boolean, object, integer, etc.
 
 In my [last blog](/posts/var), I discussed the introduction to variables in JavaScript, hoisting, and the `var` keyword.
@@ -79,7 +77,7 @@ a = false;
 console.log(a); // false
 ```
 
-**Note:** If we only declare variable with let and not assign a value, then Javascript assigns `undefined` to it. Later, when code execution reaches the variable assignment new values replace the `undefined` value.
+> If we only declare variable with let and not assign a value, then Javascript assigns `undefined` to it. Later, when code execution reaches the variable assignment new values replace the `undefined` value.
 
 ```javascript
 let a;
