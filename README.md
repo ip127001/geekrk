@@ -8,4 +8,4 @@ This blog is built on Next.js and deployed on vercel
 - used `highlight.js` for syntax highlighting
 - used `static-generation` as prerendering method in next.js
 - used `API routes` as serverless function
-- used `mongodb` to store blog likes data
+- used `mongodb` to store blog's `likes` data
